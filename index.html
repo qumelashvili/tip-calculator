@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!--LOGO!-->
+    <img class="logo" src="./images/logo.svg" alt="">
+    <!--MAIN CONTENT!-->
+    <main class="d-flex">
+        <!--LEFT SIDE CONTENT!-->
+        <div class="input-side">
+            <label for="bill">
+                Bill
+            </label>
+            <input type="number" name="bill" class="bill" id="bill">
+            <div class="tip">
+                <p>Select Tip %</p>
+                <div class="tip-container d-flex">
+                    <!-- FILL UP WITH JS-->
+                </div>
+            </div>
+            <div class="validation-people">
+                <label for="people">Number of People</label>
+                <!-- validation error message, visible when wont validate-->
+                <p class="error-message" >Can't be zero</p>
+            </div>
+            <input type="number" name="people" id="people" class="people">
+        </div>
+        <!--RIGH SIDE CONTENT!-->
+        <div class="display-side">
+            <div class="tip-amount">
+                <div class="div">
+                    <p>Tip Amount</p>
+                    <span>/ person</span>
+                </div>
+                <p class="amount">$0.00</p>
+            </div>
+            <div class="total">
+                <div>
+                    <p>Total</p>
+                    <span>/ person</span>
+                </div>
+                <p class="total-amount">$0.00</p>
+            </div>
+            <button class="reset-btn">RESET</button>
+        </div>
+    </main>
+    
+<script src="script.js"></script>
+</body>
+</html>
